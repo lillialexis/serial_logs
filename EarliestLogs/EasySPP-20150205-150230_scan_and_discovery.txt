@@ -1,0 +1,72 @@
+---------------------------------------------------
+3:01:32 PM: --> TCU_MNG_DISCOVER_REMOTE_DEVICE_REQ:
+0 --------------------------------
+TCU_MNG_DISCOVER_REMOTE_DEVICE_REQ
+Max number of reports: 10
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x03
+Length: 1 (0x0001)
+2 --
+UART
+Length: 8 (0x000008)
+Data: 0x08 0x00 0x00 0xe1 0x03 0x01 0x00 0x0a
+---------------------------------------------
+---------------------------
+3:01:32 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe1
+Command OpCode: 0x03
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe1 0x03
+-------------------------------------------------------
+-------------------------------------------------------------
+3:01:43 PM: !!! Unknown TCU_MNG_SSP_INFO_EVENT 0x3d received:
+0 --
+UART
+Length: 23 (0x000017)
+Data: 0x17 0x00 0x00 0xe1 0x7d 0x10 0x00 0x3d 0x0e 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------
+3:01:44 PM: <-- TCU_MNG_DISCOVER_REMOTE_DEVICE_RESULT_EVENT:
+0 -----------------------------------------
+TCU_MNG_DISCOVER_REMOTE_DEVICE_RESULT_EVENT
+Bd_addr: 38:0A:94:C4:7B:E6
+Class_of_Device: 0xc025a
+Length_of_Device_Name: 13
+Device_Name: 'Epic 4G Touch'
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x44
+Length: 23 (0x0017)
+2 --
+UART
+Length: 30 (0x00001e)
+Data: 0x1e 0x00 0x00 0xe1 0x44 0x17 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x0c 0x02 0x5a 0x0d 0x45 0x70 0x69 0x63 0x20 0x34 0x47 0x20 0x54 0x6f 0x75 0x63 0x68
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------
+3:01:44 PM: <-- TCU_MNG_DISCOVER_REMOTE_DEVICE_COMPLETE_EVENT:
+0 -------------------------------------------
+TCU_MNG_DISCOVER_REMOTE_DEVICE_COMPLETE_EVENT
+none
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x43
+Length: 0 (0x0000)
+2 --
+UART
+Length: 7 (0x000007)
+Data: 0x07 0x00 0x00 0xe1 0x43 0x00 0x00
+----------------------------------------

@@ -1,0 +1,239 @@
+-------------------------------------------------
+4:34:14 PM: <-- TCU_MNG_CONNECTION_REQUEST_EVENT:
+0 ------------------------------
+TCU_MNG_CONNECTION_REQUEST_EVENT
+Bd_addr: 38:0A:94:C4:7B:E6
+Class_of_Device: 0x5a020c
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x55
+Length: 9 (0x0009)
+2 --
+UART
+Length: 16 (0x000010)
+Data: 0x10 0x00 0x00 0xe1 0x55 0x09 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x0c 0x02 0x5a
+-------------------------------------------------------------------------------------
+----------------------------------------------
+4:34:14 PM: --> TCU_MNG_CONNECTION_ACCEPT_REQ:
+0 ---------------------------
+TCU_MNG_CONNECTION_ACCEPT_REQ
+Response_Type: 0x00
+Bd_Addr: 38:0A:94:C4:7B:E6
+Link_Key: 0A:9D:A6:3E:38:17:7E:F5:C6:8C:0D:C9:FF:46:5E:BE
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x13
+Length: 24 (0x0018)
+2 --
+UART
+Length: 31 (0x00001f)
+Data: 0x1f 0x00 0x00 0xe1 0x13 0x18 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0xbe 0x5e 0x46 0xff 0xc9 0x0d 0x8c 0xc6 0xf5 0x7e 0x17 0x38 0x3e 0xa6 0x9d 0x0a
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------
+4:34:14 PM: <-- TCU_MNG_CONNECTION_ACCEPT_RESP:
+0 ----------------------------
+TCU_MNG_CONNECTION_ACCEPT_RESP
+Status: successful (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x93
+Length: 1 (0x0001)
+2 --
+UART
+Length: 8 (0x000008)
+Data: 0x08 0x00 0x00 0xe1 0x93 0x01 0x00 0x00
+---------------------------------------------
+------------------------------------------------
+4:34:14 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: connected (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+--------------------------------------------------------------------------------
+-------------------------------------------------
+4:34:14 PM: <-- HCI_IO_Capability_Response_Event:
+0 ------------------------------
+HCI_IO_Capability_Response_Event
+Op_Code: 0x32
+Parameter_Length: 9
+Bd_addr: 38:0A:94:C4:7B:E6
+IO_Capability: 0x01
+OOB_Data_Present: 0x00
+Authentication_Requirement: 0x05
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x7d
+Length: 11 (0x000b)
+2 --
+UART
+Length: 18 (0x000012)
+Data: 0x12 0x00 0x00 0xe1 0x7d 0x0b 0x00 0x32 0x09 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0x00 0x05
+-----------------------------------------------------------------------------------------------
+-------------------------------------------------------------
+4:34:14 PM: <-- TCU_MNG_REMOTE_DEVICE_NAME_AUTO_NOTIFY_EVENT:
+0 ------------------------------------------
+TCU_MNG_REMOTE_DEVICE_NAME_AUTO_NOTIFY_EVENT
+Bd_addr: 38:0A:94:C4:7B:E6
+Length_of_Device_Name: 13
+Device_Name: 'Epic 4G Touch'
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x6e
+Length: 20 (0x0014)
+2 --
+UART
+Length: 27 (0x00001b)
+Data: 0x1b 0x00 0x00 0xe1 0x6e 0x14 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x0d 0x45 0x70 0x69 0x63 0x20 0x34 0x47 0x20 0x54 0x6f 0x75 0x63 0x68
+--------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------
+4:34:14 PM: <-- HCI_IO_Capability_Request_Event:
+0 -----------------------------
+HCI_IO_Capability_Request_Event
+Op_Code: 0x31
+Parameter_Length: 6
+Bd_addr: 38:0A:94:C4:7B:E6
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x7d
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x7d 0x08 0x00 0x31 0x06 0xe6 0x7b 0xc4 0x94 0x0a 0x38
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------
+4:34:14 PM: --> TCU_MNG_SSP_SET_REQ_HCI_IO_Capability_Request_Reply:
+0 -------------------------------------------------
+TCU_MNG_SSP_SET_REQ_HCI_IO_Capability_Request_Reply
+Bd_Addr: 38:0A:94:C4:7B:E6
+IO_Capability: 0x01
+OOB_Data_Present: 0x00
+Authentication_Requirement: 0x03
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x3d
+Length: 12 (0x000c)
+2 --
+UART
+Length: 19 (0x000013)
+Data: 0x13 0x00 0x00 0xe1 0x3d 0x0c 0x00 0x2b 0x04 0x09 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0x00 0x03
+----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------
+4:34:14 PM: <-- TCU_MNG_SSP_SET_RESP_HCI_IO_Capability_Request_Reply:
+0 --------------------------------------------------
+TCU_MNG_SSP_SET_RESP_HCI_IO_Capability_Request_Reply
+Status: successful (0x00)
+Hci_Status: 0x00
+Bd_addr: 38:0A:94:C4:7B:E6
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xbd
+Length: 14 (0x000e)
+2 --
+UART
+Length: 21 (0x000015)
+Data: 0x15 0x00 0x00 0xe1 0xbd 0x0e 0x00 0x00 0x0c 0x0e 0x0a 0x01 0x2b 0x04 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38
+--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------
+4:34:14 PM: <-- HCI_IO_User_Confirmation_Request_Event:
+0 ------------------------------------
+HCI_IO_User_Confirmation_Request_Event
+Op_Code: 0x33
+Parameter_Length: 10
+Bd_addr: 38:0A:94:C4:7B:E6
+Numeric_Value: 0x0002beca
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x7d
+Length: 12 (0x000c)
+2 --
+UART
+Length: 19 (0x000013)
+Data: 0x13 0x00 0x00 0xe1 0x7d 0x0c 0x00 0x33 0x0a 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0xca 0xbe 0x02 0x00
+----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------
+4:34:19 PM: --> TCU_MNG_SSP_SET_REQ_HCI_User_Confirmation_Request_Reply:
+0 -----------------------------------------------------
+TCU_MNG_SSP_SET_REQ_HCI_User_Confirmation_Request_Reply
+Bd_Addr: 38:0A:94:C4:7B:E6
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x3d
+Length: 10 (0x000a)
+2 --
+UART
+Length: 17 (0x000011)
+Data: 0x11 0x00 0x00 0xe1 0x3d 0x0a 0x00 0x2c 0x04 0x06 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------
+4:34:19 PM: <-- TCU_MNG_SSP_SET_RESP_HCI_User_Confirmation_Request_Reply:
+0 ------------------------------------------------------
+TCU_MNG_SSP_SET_RESP_HCI_User_Confirmation_Request_Reply
+Status: successful (0x00)
+Hci_Status: 0x00
+Bd_addr: 38:0A:94:C4:7B:E6
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xbd
+Length: 14 (0x000e)
+2 --
+UART
+Length: 21 (0x000015)
+Data: 0x15 0x00 0x00 0xe1 0xbd 0x0e 0x00 0x00 0x0c 0x0e 0x0a 0x01 0x2c 0x04 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+4:34:49 PM: <-- HCI_Simple_Pairing_Complete_Event:
+0 -------------------------------
+HCI_Simple_Pairing_Complete_Event
+Op_Code: 0x36
+Parameter_Length: 7
+Status: 0x05
+Bd_addr: 38:0A:94:C4:7B:E6
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x7d
+Length: 9 (0x0009)
+2 --
+UART
+Length: 16 (0x000010)
+Data: 0x10 0x00 0x00 0xe1 0x7d 0x09 0x00 0x36 0x07 0x05 0xe6 0x7b 0xc4 0x94 0x0a 0x38
+-------------------------------------------------------------------------------------
+------------------------------------------------
+4:35:14 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: disconnected (0x01)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01
+--------------------------------------------------------------------------------

@@ -1,0 +1,981 @@
+----------------------------------------------------
+3:03:58 PM: --> TCU_MNG_DISCOVER_REMOTE_SERVICE_REQ:
+0 ---------------------------------
+TCU_MNG_DISCOVER_REMOTE_SERVICE_REQ
+Security_Mode: 0x00
+Bd_Addr: 38:0A:94:C4:7B:E6
+Link_Key: C2:11:5E:53:0C:69:A5:6F:66:6B:CE:3C:DC:75:11:B1
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x05
+Length: 24 (0x0018)
+2 --
+UART
+Length: 31 (0x00001f)
+Data: 0x1f 0x00 0x00 0xe1 0x05 0x18 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0xb1 0x11 0x75 0xdc 0x3c 0xce 0x6b 0x66 0x6f 0xa5 0x69 0x0c 0x53 0x5e 0x11 0xc2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------
+3:03:58 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe1
+Command OpCode: 0x05
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe1 0x05
+-------------------------------------------------------
+------------------------------------------------
+3:03:59 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: connected (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+--------------------------------------------------------------------------------
+------------------------------------------------
+3:03:59 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: disconnected (0x01)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01
+--------------------------------------------------------------------------------
+------------------------------------------------------
+3:03:59 PM: <-- TCU_MNG_DISCOVER_REMOTE_SERVICE_EVENT:
+0 -----------------------------------
+TCU_MNG_DISCOVER_REMOTE_SERVICE_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Service_Count: 1
+0: type 0x0e
+SPP_Ext_Info_Profile: 0x03
+SPP_Ext_Info_Length: 0x0b
+Number_of_ServerChannel: 2
+0: channel 1
+1: channel 10
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x45
+Length: 22 (0x0016)
+2 --
+UART
+Length: 29 (0x00001d)
+Data: 0x1d 0x00 0x00 0xe1 0x45 0x16 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0x0e 0x03 0x0b 0x02 0x01 0x0a 0x00 0x00 0x00 0x00 0x00 0x01 0x02 0x00
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------
+3:03:59 PM: --> TCU_SPP_CONNECT_REQ:
+0 -----------------
+TCU_SPP_CONNECT_REQ
+Bd_Addr: 38:0A:94:C4:7B:E6
+Link_Key: C2:11:5E:53:0C:69:A5:6F:66:6B:CE:3C:DC:75:11:B1
+Server_Channel: 1
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x03
+Length: 32 (0x0020)
+2 --
+UART
+Length: 39 (0x000027)
+Data: 0x27 0x00 0x00 0xe5 0x03 0x20 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x07 0x16 0x00 0x00 0x00 0x00 0x00 0x01 0x01 0x01 0xb1 0x11 0x75 0xdc 0x3c 0xce 0x6b 0x66 0x6f 0xa5 0x69 0x0c 0x53 0x5e 0x11 0xc2
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------
+3:03:59 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe5
+Command OpCode: 0x03
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe5 0x03
+-------------------------------------------------------
+------------------------------------------------
+3:04:00 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: connected (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+--------------------------------------------------------------------------------
+------------------------------------------------
+3:04:00 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: disconnected (0x01)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01
+--------------------------------------------------------------------------------
+--------------------------------------
+3:04:00 PM: <-- TCU_SPP_CONNECT_EVENT:
+0 -------------------
+TCU_SPP_CONNECT_EVENT
+Status: No supported SDP (0x8d)
+Bd_addr: 38:0A:94:C4:7B:E6
+Negotiated_Frame_Size: 65535
+Length_of_Device_Name: 13
+Device_Name: 'Epic 4G Touch'
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x43
+Length: 23 (0x0017)
+2 --
+UART
+Length: 30 (0x00001e)
+Data: 0x1e 0x00 0x00 0xe5 0x43 0x17 0x00 0x8d 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0xff 0xff 0x0d 0x45 0x70 0x69 0x63 0x20 0x34 0x47 0x20 0x54 0x6f 0x75 0x63 0x68
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------
+3:04:15 PM: --> TCU_MNG_DISCOVER_REMOTE_SERVICE_REQ:
+0 ---------------------------------
+TCU_MNG_DISCOVER_REMOTE_SERVICE_REQ
+Security_Mode: 0x00
+Bd_Addr: 38:0A:94:C4:7B:E6
+Link_Key: C2:11:5E:53:0C:69:A5:6F:66:6B:CE:3C:DC:75:11:B1
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x05
+Length: 24 (0x0018)
+2 --
+UART
+Length: 31 (0x00001f)
+Data: 0x1f 0x00 0x00 0xe1 0x05 0x18 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0xb1 0x11 0x75 0xdc 0x3c 0xce 0x6b 0x66 0x6f 0xa5 0x69 0x0c 0x53 0x5e 0x11 0xc2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------
+3:04:15 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe1
+Command OpCode: 0x05
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe1 0x05
+-------------------------------------------------------
+------------------------------------------------
+3:04:17 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: connected (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+--------------------------------------------------------------------------------
+------------------------------------------------
+3:04:17 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: disconnected (0x01)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01
+--------------------------------------------------------------------------------
+------------------------------------------------------
+3:04:17 PM: <-- TCU_MNG_DISCOVER_REMOTE_SERVICE_EVENT:
+0 -----------------------------------
+TCU_MNG_DISCOVER_REMOTE_SERVICE_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Service_Count: 1
+0: type 0x0e
+SPP_Ext_Info_Profile: 0x03
+SPP_Ext_Info_Length: 0x0b
+Number_of_ServerChannel: 2
+0: channel 1
+1: channel 10
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x45
+Length: 22 (0x0016)
+2 --
+UART
+Length: 29 (0x00001d)
+Data: 0x1d 0x00 0x00 0xe1 0x45 0x16 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0x0e 0x03 0x0b 0x02 0x01 0x0a 0x00 0x00 0x00 0x00 0x00 0x01 0x02 0x00
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------
+3:04:17 PM: --> TCU_SPP_CONNECT_REQ:
+0 -----------------
+TCU_SPP_CONNECT_REQ
+Bd_Addr: 38:0A:94:C4:7B:E6
+Link_Key: C2:11:5E:53:0C:69:A5:6F:66:6B:CE:3C:DC:75:11:B1
+Server_Channel: 1
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x03
+Length: 32 (0x0020)
+2 --
+UART
+Length: 39 (0x000027)
+Data: 0x27 0x00 0x00 0xe5 0x03 0x20 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x07 0x16 0x00 0x00 0x00 0x00 0x00 0x01 0x01 0x01 0xb1 0x11 0x75 0xdc 0x3c 0xce 0x6b 0x66 0x6f 0xa5 0x69 0x0c 0x53 0x5e 0x11 0xc2
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------
+3:04:17 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe5
+Command OpCode: 0x03
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe5 0x03
+-------------------------------------------------------
+------------------------------------------------
+3:04:18 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: connected (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+--------------------------------------------------------------------------------
+------------------------------------------------
+3:04:18 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: disconnected (0x01)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01
+--------------------------------------------------------------------------------
+--------------------------------------
+3:04:18 PM: <-- TCU_SPP_CONNECT_EVENT:
+0 -------------------
+TCU_SPP_CONNECT_EVENT
+Status: No supported SDP (0x8d)
+Bd_addr: 38:0A:94:C4:7B:E6
+Negotiated_Frame_Size: 65535
+Length_of_Device_Name: 13
+Device_Name: 'Epic 4G Touch'
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x43
+Length: 23 (0x0017)
+2 --
+UART
+Length: 30 (0x00001e)
+Data: 0x1e 0x00 0x00 0xe5 0x43 0x17 0x00 0x8d 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0xff 0xff 0x0d 0x45 0x70 0x69 0x63 0x20 0x34 0x47 0x20 0x54 0x6f 0x75 0x63 0x68
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------
+3:04:23 PM: --> TCU_MNG_DISCOVER_REMOTE_SERVICE_REQ:
+0 ---------------------------------
+TCU_MNG_DISCOVER_REMOTE_SERVICE_REQ
+Security_Mode: 0x00
+Bd_Addr: 38:0A:94:C4:7B:E6
+Link_Key: C2:11:5E:53:0C:69:A5:6F:66:6B:CE:3C:DC:75:11:B1
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x05
+Length: 24 (0x0018)
+2 --
+UART
+Length: 31 (0x00001f)
+Data: 0x1f 0x00 0x00 0xe1 0x05 0x18 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0xb1 0x11 0x75 0xdc 0x3c 0xce 0x6b 0x66 0x6f 0xa5 0x69 0x0c 0x53 0x5e 0x11 0xc2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------
+3:04:23 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe1
+Command OpCode: 0x05
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe1 0x05
+-------------------------------------------------------
+------------------------------------------------
+3:04:23 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: connected (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+--------------------------------------------------------------------------------
+------------------------------------------------
+3:04:24 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: disconnected (0x01)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01
+--------------------------------------------------------------------------------
+------------------------------------------------------
+3:04:24 PM: <-- TCU_MNG_DISCOVER_REMOTE_SERVICE_EVENT:
+0 -----------------------------------
+TCU_MNG_DISCOVER_REMOTE_SERVICE_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Service_Count: 1
+0: type 0x0e
+SPP_Ext_Info_Profile: 0x03
+SPP_Ext_Info_Length: 0x0b
+Number_of_ServerChannel: 2
+0: channel 1
+1: channel 10
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x45
+Length: 22 (0x0016)
+2 --
+UART
+Length: 29 (0x00001d)
+Data: 0x1d 0x00 0x00 0xe1 0x45 0x16 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0x0e 0x03 0x0b 0x02 0x01 0x0a 0x00 0x00 0x00 0x00 0x00 0x01 0x02 0x00
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------
+3:04:24 PM: --> TCU_SPP_CONNECT_REQ:
+0 -----------------
+TCU_SPP_CONNECT_REQ
+Bd_Addr: 38:0A:94:C4:7B:E6
+Link_Key: C2:11:5E:53:0C:69:A5:6F:66:6B:CE:3C:DC:75:11:B1
+Server_Channel: 1
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x03
+Length: 32 (0x0020)
+2 --
+UART
+Length: 39 (0x000027)
+Data: 0x27 0x00 0x00 0xe5 0x03 0x20 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x07 0x16 0x00 0x00 0x00 0x00 0x00 0x01 0x01 0x01 0xb1 0x11 0x75 0xdc 0x3c 0xce 0x6b 0x66 0x6f 0xa5 0x69 0x0c 0x53 0x5e 0x11 0xc2
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------
+3:04:24 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe5
+Command OpCode: 0x03
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe5 0x03
+-------------------------------------------------------
+------------------------------------------------
+3:04:25 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: connected (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+--------------------------------------------------------------------------------
+------------------------------------------------
+3:04:25 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: disconnected (0x01)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01
+--------------------------------------------------------------------------------
+--------------------------------------
+3:04:25 PM: <-- TCU_SPP_CONNECT_EVENT:
+0 -------------------
+TCU_SPP_CONNECT_EVENT
+Status: No supported SDP (0x8d)
+Bd_addr: 38:0A:94:C4:7B:E6
+Negotiated_Frame_Size: 65535
+Length_of_Device_Name: 13
+Device_Name: 'Epic 4G Touch'
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x43
+Length: 23 (0x0017)
+2 --
+UART
+Length: 30 (0x00001e)
+Data: 0x1e 0x00 0x00 0xe5 0x43 0x17 0x00 0x8d 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0xff 0xff 0x0d 0x45 0x70 0x69 0x63 0x20 0x34 0x47 0x20 0x54 0x6f 0x75 0x63 0x68
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------
+3:04:40 PM: --> TCU_MNG_DISCOVER_REMOTE_SERVICE_REQ:
+0 ---------------------------------
+TCU_MNG_DISCOVER_REMOTE_SERVICE_REQ
+Security_Mode: 0x00
+Bd_Addr: 38:0A:94:C4:7B:E6
+Link_Key: C2:11:5E:53:0C:69:A5:6F:66:6B:CE:3C:DC:75:11:B1
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x05
+Length: 24 (0x0018)
+2 --
+UART
+Length: 31 (0x00001f)
+Data: 0x1f 0x00 0x00 0xe1 0x05 0x18 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0xb1 0x11 0x75 0xdc 0x3c 0xce 0x6b 0x66 0x6f 0xa5 0x69 0x0c 0x53 0x5e 0x11 0xc2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------
+3:04:40 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe1
+Command OpCode: 0x05
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe1 0x05
+-------------------------------------------------------
+------------------------------------------------
+3:04:40 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: connected (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+--------------------------------------------------------------------------------
+------------------------------------------------
+3:04:40 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: disconnected (0x01)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01
+--------------------------------------------------------------------------------
+------------------------------------------------------
+3:04:40 PM: <-- TCU_MNG_DISCOVER_REMOTE_SERVICE_EVENT:
+0 -----------------------------------
+TCU_MNG_DISCOVER_REMOTE_SERVICE_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Service_Count: 1
+0: type 0x0e
+SPP_Ext_Info_Profile: 0x03
+SPP_Ext_Info_Length: 0x0b
+Number_of_ServerChannel: 2
+0: channel 1
+1: channel 10
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x45
+Length: 22 (0x0016)
+2 --
+UART
+Length: 29 (0x00001d)
+Data: 0x1d 0x00 0x00 0xe1 0x45 0x16 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0x0e 0x03 0x0b 0x02 0x01 0x0a 0x00 0x00 0x00 0x00 0x00 0x01 0x02 0x00
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------
+3:04:40 PM: --> TCU_SPP_CONNECT_REQ:
+0 -----------------
+TCU_SPP_CONNECT_REQ
+Bd_Addr: 38:0A:94:C4:7B:E6
+Link_Key: C2:11:5E:53:0C:69:A5:6F:66:6B:CE:3C:DC:75:11:B1
+Server_Channel: 1
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x03
+Length: 32 (0x0020)
+2 --
+UART
+Length: 39 (0x000027)
+Data: 0x27 0x00 0x00 0xe5 0x03 0x20 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x07 0x16 0x00 0x00 0x00 0x00 0x00 0x01 0x01 0x01 0xb1 0x11 0x75 0xdc 0x3c 0xce 0x6b 0x66 0x6f 0xa5 0x69 0x0c 0x53 0x5e 0x11 0xc2
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------
+3:04:40 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe5
+Command OpCode: 0x03
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe5 0x03
+-------------------------------------------------------
+------------------------------------------------
+3:04:41 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: connected (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+--------------------------------------------------------------------------------
+------------------------------------------------
+3:04:41 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: disconnected (0x01)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01
+--------------------------------------------------------------------------------
+--------------------------------------
+3:04:41 PM: <-- TCU_SPP_CONNECT_EVENT:
+0 -------------------
+TCU_SPP_CONNECT_EVENT
+Status: No supported SDP (0x8d)
+Bd_addr: 38:0A:94:C4:7B:E6
+Negotiated_Frame_Size: 65535
+Length_of_Device_Name: 13
+Device_Name: 'Epic 4G Touch'
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x43
+Length: 23 (0x0017)
+2 --
+UART
+Length: 30 (0x00001e)
+Data: 0x1e 0x00 0x00 0xe5 0x43 0x17 0x00 0x8d 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0xff 0xff 0x0d 0x45 0x70 0x69 0x63 0x20 0x34 0x47 0x20 0x54 0x6f 0x75 0x63 0x68
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------
+3:04:47 PM: --> TCU_MNG_DISCOVER_REMOTE_SERVICE_REQ:
+0 ---------------------------------
+TCU_MNG_DISCOVER_REMOTE_SERVICE_REQ
+Security_Mode: 0x00
+Bd_Addr: 38:0A:94:C4:7B:E6
+Link_Key: C2:11:5E:53:0C:69:A5:6F:66:6B:CE:3C:DC:75:11:B1
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x05
+Length: 24 (0x0018)
+2 --
+UART
+Length: 31 (0x00001f)
+Data: 0x1f 0x00 0x00 0xe1 0x05 0x18 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0xb1 0x11 0x75 0xdc 0x3c 0xce 0x6b 0x66 0x6f 0xa5 0x69 0x0c 0x53 0x5e 0x11 0xc2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------
+3:04:47 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe1
+Command OpCode: 0x05
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe1 0x05
+-------------------------------------------------------
+------------------------------------------------
+3:04:47 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: connected (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+--------------------------------------------------------------------------------
+------------------------------------------------
+3:04:47 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: disconnected (0x01)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01
+--------------------------------------------------------------------------------
+------------------------------------------------------
+3:04:47 PM: <-- TCU_MNG_DISCOVER_REMOTE_SERVICE_EVENT:
+0 -----------------------------------
+TCU_MNG_DISCOVER_REMOTE_SERVICE_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Service_Count: 1
+0: type 0x0e
+SPP_Ext_Info_Profile: 0x03
+SPP_Ext_Info_Length: 0x0b
+Number_of_ServerChannel: 2
+0: channel 1
+1: channel 10
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x45
+Length: 22 (0x0016)
+2 --
+UART
+Length: 29 (0x00001d)
+Data: 0x1d 0x00 0x00 0xe1 0x45 0x16 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0x0e 0x03 0x0b 0x02 0x01 0x0a 0x00 0x00 0x00 0x00 0x00 0x01 0x02 0x00
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------
+3:04:47 PM: --> TCU_SPP_CONNECT_REQ:
+0 -----------------
+TCU_SPP_CONNECT_REQ
+Bd_Addr: 38:0A:94:C4:7B:E6
+Link_Key: C2:11:5E:53:0C:69:A5:6F:66:6B:CE:3C:DC:75:11:B1
+Server_Channel: 1
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x03
+Length: 32 (0x0020)
+2 --
+UART
+Length: 39 (0x000027)
+Data: 0x27 0x00 0x00 0xe5 0x03 0x20 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x07 0x16 0x00 0x00 0x00 0x00 0x00 0x01 0x01 0x01 0xb1 0x11 0x75 0xdc 0x3c 0xce 0x6b 0x66 0x6f 0xa5 0x69 0x0c 0x53 0x5e 0x11 0xc2
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------
+3:04:48 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe5
+Command OpCode: 0x03
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe5 0x03
+-------------------------------------------------------
+------------------------------------------------
+3:04:49 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: connected (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+--------------------------------------------------------------------------------
+------------------------------------------------
+3:04:49 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: disconnected (0x01)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01
+--------------------------------------------------------------------------------
+--------------------------------------
+3:04:49 PM: <-- TCU_SPP_CONNECT_EVENT:
+0 -------------------
+TCU_SPP_CONNECT_EVENT
+Status: No supported SDP (0x8d)
+Bd_addr: 38:0A:94:C4:7B:E6
+Negotiated_Frame_Size: 65535
+Length_of_Device_Name: 13
+Device_Name: 'Epic 4G Touch'
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x43
+Length: 23 (0x0017)
+2 --
+UART
+Length: 30 (0x00001e)
+Data: 0x1e 0x00 0x00 0xe5 0x43 0x17 0x00 0x8d 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0xff 0xff 0x0d 0x45 0x70 0x69 0x63 0x20 0x34 0x47 0x20 0x54 0x6f 0x75 0x63 0x68
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------
+3:04:53 PM: <-- TCU_MNG_CONNECTION_REQUEST_EVENT:
+0 ------------------------------
+TCU_MNG_CONNECTION_REQUEST_EVENT
+Bd_addr: 38:0A:94:C4:7B:E6
+Class_of_Device: 0x5a020c
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x55
+Length: 9 (0x0009)
+2 --
+UART
+Length: 16 (0x000010)
+Data: 0x10 0x00 0x00 0xe1 0x55 0x09 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x0c 0x02 0x5a
+-------------------------------------------------------------------------------------
+----------------------------------------------
+3:04:53 PM: --> TCU_MNG_CONNECTION_ACCEPT_REQ:
+0 ---------------------------
+TCU_MNG_CONNECTION_ACCEPT_REQ
+Response_Type: 0x00
+Bd_Addr: 38:0A:94:C4:7B:E6
+Link_Key: C2:11:5E:53:0C:69:A5:6F:66:6B:CE:3C:DC:75:11:B1
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x13
+Length: 24 (0x0018)
+2 --
+UART
+Length: 31 (0x00001f)
+Data: 0x1f 0x00 0x00 0xe1 0x13 0x18 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x01 0xb1 0x11 0x75 0xdc 0x3c 0xce 0x6b 0x66 0x6f 0xa5 0x69 0x0c 0x53 0x5e 0x11 0xc2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------
+3:04:53 PM: <-- TCU_MNG_CONNECTION_ACCEPT_RESP:
+0 ----------------------------
+TCU_MNG_CONNECTION_ACCEPT_RESP
+Status: successful (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x93
+Length: 1 (0x0001)
+2 --
+UART
+Length: 8 (0x000008)
+Data: 0x08 0x00 0x00 0xe1 0x93 0x01 0x00 0x00
+---------------------------------------------
+------------------------------------------------
+3:04:53 PM: <-- TCU_MNG_CONNECTION_STATUS_EVENT:
+0 -----------------------------
+TCU_MNG_CONNECTION_STATUS_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Connection_Status: connected (0x00)
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0x47
+Length: 8 (0x0008)
+2 --
+UART
+Length: 15 (0x00000f)
+Data: 0x0f 0x00 0x00 0xe1 0x47 0x08 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x00
+--------------------------------------------------------------------------------
+--------------------------------------
+3:04:54 PM: <-- TCU_SPP_CONNECT_EVENT:
+0 -------------------
+TCU_SPP_CONNECT_EVENT
+Status: successful (0x00)
+Bd_addr: 38:0A:94:C4:7B:E6
+Negotiated_Frame_Size: 7938
+Length_of_Device_Name: 13
+Device_Name: 'Epic 4G Touch'
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x43
+Length: 23 (0x0017)
+2 --
+UART
+Length: 30 (0x00001e)
+Data: 0x1e 0x00 0x00 0xe5 0x43 0x17 0x00 0x00 0xe6 0x7b 0xc4 0x94 0x0a 0x38 0x1f 0x02 0x0d 0x45 0x70 0x69 0x63 0x20 0x34 0x47 0x20 0x54 0x6f 0x75 0x63 0x68
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------
+3:04:54 PM: !!! Unknown TCU_MNG_SSP_INFO_EVENT 0x30 received:
+0 --
+UART
+Length: 12 (0x00000c)
+Data: 0x0c 0x00 0x00 0xe1 0x7d 0x05 0x00 0x30 0x03 0x00 0x01 0x00
+-----------------------------------------------------------------

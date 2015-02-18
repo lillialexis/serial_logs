@@ -1,0 +1,88 @@
+------------------------------------------
+3:05:36 PM: --> TCU_SPP_DATA_TRANSFER_REQ:
+0 -----------------------
+TCU_SPP_DATA_TRANSFER_REQ
+Length_of_Data: 5
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x08
+Length: 7 (0x0007)
+2 --
+UART
+Length: 14 (0x00000e)
+Data: 0x0e 0x00 0x00 0xe5 0x08 0x07 0x00 0x05 0x00 0x78 0x20 0x20 0x20 0x78
+---------------------------------------------------------------------------
+---------------------------
+3:05:36 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe5
+Command OpCode: 0x08
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe5 0x08
+-------------------------------------------------------
+----------------------------------------
+3:05:36 PM: <-- TCU_SPP_DATA_SEND_EVENT:
+0 -----
+Generic
+Service ID: 0xe5
+Op code: 0xf1
+Length: 0 (0x0000)
+1 --
+UART
+Length: 7 (0x000007)
+Data: 0x07 0x00 0x00 0xe5 0xf1 0x00 0x00
+----------------------------------------
+------------------------------------------
+3:05:48 PM: --> TCU_SPP_DATA_TRANSFER_REQ:
+0 -----------------------
+TCU_SPP_DATA_TRANSFER_REQ
+Length_of_Data: 7
+1 -----
+Generic
+Service ID: 0xe5
+Op code: 0x08
+Length: 9 (0x0009)
+2 --
+UART
+Length: 16 (0x000010)
+Data: 0x10 0x00 0x00 0xe5 0x08 0x09 0x00 0x07 0x00 0x7a 0x20 0x20 0x20 0x20 0x20 0x7a
+-------------------------------------------------------------------------------------
+---------------------------
+3:05:48 PM: <-- TCU_ACCEPT:
+0 --------
+TCU_ACCEPT
+Status: successful (0x00)
+Command ServiceID: 0xe5
+Command OpCode: 0x08
+1 -----
+Generic
+Service ID: 0xe1
+Op code: 0xf1
+Length: 3 (0x0003)
+2 --
+UART
+Length: 10 (0x00000a)
+Data: 0x0a 0x00 0x00 0xe1 0xf1 0x03 0x00 0x00 0xe5 0x08
+-------------------------------------------------------
+----------------------------------------
+3:05:48 PM: <-- TCU_SPP_DATA_SEND_EVENT:
+0 -----
+Generic
+Service ID: 0xe5
+Op code: 0xf1
+Length: 0 (0x0000)
+1 --
+UART
+Length: 7 (0x000007)
+Data: 0x07 0x00 0x00 0xe5 0xf1 0x00 0x00
+----------------------------------------
